@@ -280,7 +280,7 @@ export class OmniSharpServer {
         let args = [
             '-s', solutionPath,
             '--hostPID', process.pid.toString(),
-            'DotNet:enablePackageRestore=false',
+            'DotNet:enablePackageRestore=true',
             '--encoding', 'utf-8',
             '--loglevel', 'information'
         ];
